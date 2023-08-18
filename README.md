@@ -7,7 +7,7 @@
 
 Copy the extension to phpBB/ext/senky/clipboardimage
 
-Go to "ACP" > "Customise" > "Extensions" and enable the "Image Compressor" extension.
+Go to "ACP" > "Customise" > "Extensions" and enable the "Clipboard Image" extension.
 
 ## License
 
