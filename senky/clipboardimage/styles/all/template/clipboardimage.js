@@ -6,7 +6,7 @@
         editor_textarea,
         current_cursor_position,
         uploadImages = function () {
-            // save cursor pointer when have more than one attachment
+            // save cursor position when have more than one attachment
             editor_textarea = document.forms[form_name].elements[text_name];
             current_cursor_position = [editor_textarea.selectionStart, editor_textarea.selectionEnd];
             // upload files
@@ -122,7 +122,7 @@
         try {
             let json = JSON.parse(response.response);
             if (typeof json.title === 'undefined' && !json.error && file.status === plupload.DONE) {
-                // restore cursor pointer when have more than one attachment
+                // restore cursor position when have more than one attachment
                 editor_textarea.selectionStart = current_cursor_position[0];
                 editor_textarea.selectionEnd = current_cursor_position[1];
 
